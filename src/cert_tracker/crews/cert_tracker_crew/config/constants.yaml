@@ -1,0 +1,19 @@
+gcp_foldername: '/Users/andreafung/Desktop/HF_OneDrive/OneDrive - UBC/Shortcuts/Heart Failure Trials - TMF Group Components/Investigator and staff/GCP Training (X2 Years)' 
+#'../Data_examples/GCP Training (X2 Years)'
+div_foldername: '/Users/andreafung/Desktop/HF_OneDrive/OneDrive - UBC/Shortcuts/Heart Failure Trials - TMF Group Components/Investigator and staff/Health Canada DIV5 (X3 years)' 
+#'../Data_examples/DIV'
+tdg_foldername: '/Users/andreafung/Desktop/HF_OneDrive/OneDrive - UBC/Shortcuts/Heart Failure Trials - TMF Group Components/Investigator and staff/TDG Training (X2 Years)' 
+
+email_to: 
+  name: 'Miss Fung'
+  email: 'andrea.fung@alumni.ubc.ca'
+email_from: 
+  name: 'Andrea Fung'
+  email: 'andreafung6@gmail.com'
+
+cert_extraction_csv: '../data/cert_extraction.csv' 
+test_dirpath: '../data'
+one_drive_folder: "/Users/andreafung/Desktop/HF_OneDrive/OneDrive - UBC"
+
+days_ahead: 90
+

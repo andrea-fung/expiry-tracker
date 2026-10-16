@@ -1,0 +1,20 @@
+lead_data_extraction:
+  description: >
+    Collect the following information about the certification text:
+      - Personal information:
+        - Name: The full name of the certificate owner (in format: Robert Smith), 
+        if available.
+      - Certificate information:
+        - Company name:: The name of the company that provided the certification.
+        - Course name: A concise description of the type of certification.
+        - Certification date: The date of the certification (in datetime format: %d-%b-%Y),
+        if available. Otherwise, fill in this field with NA.
+        - Expiry date: The date for when the certification expires (in datetime format: 
+        %d-%b-%Y), if availabldre. Otherwise, fill in this field with NA.
+      - Certificate text:
+        {certificate_text}
+  expected_output: >
+    A complete data report including:
+      - Personal information (name)
+      - Certificate information (company and course name, certification date 
+      and expiry data if available)

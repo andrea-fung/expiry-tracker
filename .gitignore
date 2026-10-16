@@ -1,0 +1,6 @@
+.env
+data/
+Data_examples/
+__pycache__/
+lib/
+.DS_Store
