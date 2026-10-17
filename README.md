@@ -1,56 +1,40 @@
-# {{crew_name}} Crew
+# Training Certificate Expiration: AI Tracker and Email Notification
 
-Welcome to the {{crew_name}} Crew project, powered by [crewAI](https://crewai.com). This template is designed to help you set up a multi-agent AI system with ease, leveraging the powerful and flexible framework provided by crewAI. Our goal is to enable your agents to collaborate effectively on complex tasks, maximizing their collective intelligence and capabilities.
+Intro summary...
 
-## Installation
+## Installation and Setup
 
-Ensure you have Python >=3.10 <3.14 installed on your system. This project uses [UV](https://docs.astral.sh/uv/) for dependency management and package handling, offering a seamless setup and execution experience.
+This project uses Python and Conda for environment management
 
-First, if you haven't already, install uv:
+### Prerequisites
+- Miniconda or Anaconda
 
-```bash
-pip install uv
-```
+### Setup
+ 1. Clone the repo
+ 'git clone https://github.com/andrea-fung/expiry-tracker.git'
 
-Next, navigate to your project directory and install the dependencies:
+ 2. Create the Conda environment
 
-(Optional) Lock the dependencies and install them by using the CLI command:
-```bash
-crewai install
-```
+ Go to your repository.
+ If using Minicoda/Anaconda, run: 
+ 'conda env create -f environment.yml'
+ 'conda activate cert_tracker'
 
-### Customizing
+ Otherwise, install libraries with the requirements.txt file and activate virtual environment.
 
-**Add your `OPENAI_API_KEY` into the `.env` file**
+ 3. Create an .env file 
+    - write 'GMAIL_PASS='[YOUR_PASS_TOKEN]'' 
+    - if not using gmail for sending email notification, create an alternative password and modify the send_email function in main.py as appropriate.
 
-- Modify `src/cert_tracker/config/agents.yaml` to define your agents
-- Modify `src/cert_tracker/config/tasks.yaml` to define your tasks
-- Modify `src/cert_tracker/crew.py` to add your own logic, tools and specific args
-- Modify `src/cert_tracker/main.py` to add custom inputs for your agents and tasks
+ 4. create a data folder at the root folder
+ 5. Modify `src/cert_tracker/crews/cert_tracker_crew/config/constants.yaml` to define your data paths and preferences.
+ 6. For Sharepoint/OneDrive folder updating
+    - Sync OneDrive folder to your local system
+    - Create a Microsoft PowerAutomate flow 
+    - In the OneDrive folder, create a FlowTrigger and FlowData folder
 
 ## Running the Project
 
-To kickstart your flow and begin execution, run this from the root folder of your project:
+To kickstart your flow and begin execution, run this from the src folder of your project:
+'python3 -m cert_tracker.main'
 
-```bash
-crewai run
-```
-
-This command initializes the cert_tracker Flow as defined in your configuration.
-
-This example, unmodified, will run a content creation flow on AI Agents and save the output to `output/post.md`.
-
-## Understanding Your Crew
-
-The cert_tracker Crew is composed of multiple AI agents, each with unique roles, goals, and tools. These agents collaborate on a series of tasks, defined in `config/tasks.yaml`, leveraging their collective skills to achieve complex objectives. The `config/agents.yaml` file outlines the capabilities and configurations of each agent in your crew.
-
-## Support
-
-For support, questions, or feedback regarding the {{crew_name}} Crew or crewAI.
-
-- Visit our [documentation](https://docs.crewai.com)
-- Reach out to us through our [GitHub repository](https://github.com/joaomdmoura/crewai)
-- [Join our Discord](https://discord.com/invite/X4JWnZnxPb)
-- [Chat with our docs](https://chatg.pt/DWjSBZn)
-
-Let's create wonders together with the power and simplicity of crewAI.
