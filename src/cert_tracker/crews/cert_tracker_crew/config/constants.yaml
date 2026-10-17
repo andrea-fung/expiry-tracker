@@ -1,7 +1,5 @@
 gcp_foldername: '/Users/andreafung/Desktop/HF_OneDrive/OneDrive - UBC/Shortcuts/Heart Failure Trials - TMF Group Components/Investigator and staff/GCP Training (X2 Years)' 
-#'../Data_examples/GCP Training (X2 Years)'
 div_foldername: '/Users/andreafung/Desktop/HF_OneDrive/OneDrive - UBC/Shortcuts/Heart Failure Trials - TMF Group Components/Investigator and staff/Health Canada DIV5 (X3 years)' 
-#'../Data_examples/DIV'
 tdg_foldername: '/Users/andreafung/Desktop/HF_OneDrive/OneDrive - UBC/Shortcuts/Heart Failure Trials - TMF Group Components/Investigator and staff/TDG Training (X2 Years)' 
 
 email_to: 
@@ -13,7 +11,9 @@ email_from:
 
 cert_extraction_csv: '../data/cert_extraction.csv' 
 test_dirpath: '../data'
+#for onedrive expiry column updating - use path up to 'FlowTriggers' and 'FlowData' folders
 one_drive_folder: "/Users/andreafung/Desktop/HF_OneDrive/OneDrive - UBC"
 
+#email notification - certificates that will expire within x days ahead
 days_ahead: 90
 
