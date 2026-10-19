@@ -1,6 +1,6 @@
-# Training Certificate Expiration: AI Tracker and Email Notification
+# Staff Training Document Management with LLM-based Information Extraction
 
-Intro summary...
+Manually tracking staff training certificates is time-consuming, and the burden on managers grows with team size. This project automates the process: it extracts key information from training certificate documents, updates expiry metadata in the team’s records on a synced OneDrive folder, and emails managers when staff certifications are due for renewal.
 
 ## Installation and Setup
 
