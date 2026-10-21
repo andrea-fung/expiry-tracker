@@ -11,6 +11,8 @@ email_from:
 
 cert_extraction_csv: '../data/cert_extraction.csv' 
 test_dirpath: '../data'
+#location with log of the last date of cert tracker launch 
+launchctl_log: "Library/Logs/certtracker_last_run.txt"
 #for onedrive expiry column updating - use path up to 'FlowTriggers' and 'FlowData' folders
 one_drive_folder: "/Users/andreafung/Desktop/HF_OneDrive/OneDrive - UBC"
 

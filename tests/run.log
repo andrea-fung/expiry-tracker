@@ -1,0 +1,1105 @@
+╭───────────────────────────── 🌊 Flow Execution ──────────────────────────────╮
+│                                                                              │
+│  Starting Flow Execution                                                     │
+│  Name: ExpiryTrackerFlow                                                     │
+│  ID: 23c15f1f-872b-478c-b1f1-67574ec17bbe                                    │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭─────────────────────────── ✨ Update Available ✨ ───────────────────────────╮
+│                                                                              │
+│  A new version of CrewAI is available!                                       │
+│                                                                              │
+│  Current version: 1.15.22                                                    │
+│  Latest version:  1.15.28                                                    │
+│                                                                              │
+│  To update, run: uv sync --upgrade-package crewai                            │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭────────────────────────────── 🌊 Flow Started ───────────────────────────────╮
+│                                                                              │
+│  Flow Started                                                                │
+│  Name: ExpiryTrackerFlow                                                     │
+│  ID: 23c15f1f-872b-478c-b1f1-67574ec17bbe                                    │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭─────────────────────────── 🔄 Flow Method Running ───────────────────────────╮
+│                                                                              │
+│  Method: load_existing_data                                                  │
+│  Status: Running                                                             │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+cert_tracker.csv is up to date.
+╭────────────────────────── ✅ Flow Method Completed ──────────────────────────╮
+│                                                                              │
+│  Method: load_existing_data                                                  │
+│  Status: Completed                                                           │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭─────────────────────────── 🔄 Flow Method Running ───────────────────────────╮
+│                                                                              │
+│  Method: update_df                                                           │
+│  Status: Running                                                             │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭────────────────────────── ✅ Flow Method Completed ──────────────────────────╮
+│                                                                              │
+│  Method: update_df                                                           │
+│  Status: Completed                                                           │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭─────────────────────────── 🔄 Flow Method Running ───────────────────────────╮
+│                                                                              │
+│  Method: get_expiry_dates                                                    │
+│  Status: Running                                                             │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭────────────────────────── ✅ Flow Method Completed ──────────────────────────╮
+│                                                                              │
+│  Method: get_expiry_dates                                                    │
+│  Status: Completed                                                           │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭─────────────────────────── 🔄 Flow Method Running ───────────────────────────╮
+│                                                                              │
+│  Method: filter_by_expiry                                                    │
+│  Status: Running                                                             │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭────────────────────────── ✅ Flow Method Completed ──────────────────────────╮
+│                                                                              │
+│  Method: filter_by_expiry                                                    │
+│  Status: Completed                                                           │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭─────────────────────────── 🔄 Flow Method Running ───────────────────────────╮
+│                                                                              │
+│  Method: ordered_expiry                                                      │
+│  Status: Running                                                             │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+should be skipped
+╭────────────────────────── ✅ Flow Method Completed ──────────────────────────╮
+│                                                                              │
+│  Method: ordered_expiry                                                      │
+│  Status: Completed                                                           │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+Dear Miss Fung,
+
+I am writing to let you know the following certificates are due to expire within the next 90 days:
+
+Certificates:
+
+Name: Margot Davis
+Course: Health Canada Division 5 - Drugs For Clinical Trials Involving Human Subjects, Health Canada Division 5 - Investigator
+Expiry Date: 11 Nov 2026
+
+Name: Elizabeth Grieve
+Course: Health Canada Division 5 - Drugs For Clinical Trials Involving Human Subjects
+Expiry Date: 13 Dec 2026
+
+Name: Suzanne Ho
+Course: Health Canada Division 5 - Drugs For Clinical Trials Involving Human Subjects
+(Curriculum Group)
+Health Canada Division 5 - Research Staff - ex: coordinator, assistant, nurse, manager
+(Course Learner Group)
+Expiry Date: 14 Dec 2026
+
+Name: Thomas Roston
+Course: Canada GCP (Curriculum Group) Investigators (Course Learner Group) 2 - Refresher
+Expiry Date: 17 Dec 2026
+
+Kind regards,
+Andrea Fung
+
+╭─────────────────────────── 🔄 Flow Method Running ───────────────────────────╮
+│                                                                              │
+│  Method: email_content                                                       │
+│  Status: Running                                                             │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭────────────────────────── ✅ Flow Method Completed ──────────────────────────╮
+│                                                                              │
+│  Method: email_content                                                       │
+│  Status: Completed                                                           │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭─────────────────────────── 🔄 Flow Method Running ───────────────────────────╮
+│                                                                              │
+│  Method: send_email                                                          │
+│  Status: Running                                                             │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭────────────────────────── ✅ Flow Method Completed ──────────────────────────╮
+│                                                                              │
+│  Method: send_email                                                          │
+│  Status: Completed                                                           │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭───────────────────────────── ✅ Flow Completion ─────────────────────────────╮
+│                                                                              │
+│  Flow Execution Completed                                                    │
+│  Name: ExpiryTrackerFlow                                                     │
+│  ID: 23c15f1f-872b-478c-b1f1-67574ec17bbe                                    │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+flow took 0.05 minutes
+╭───────────────────────────── 🌊 Flow Execution ──────────────────────────────╮
+│                                                                              │
+│  Starting Flow Execution                                                     │
+│  Name: ExpiryTrackerFlow                                                     │
+│  ID: 470b7656-3c32-4620-920c-8762dfca48f6                                    │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭─────────────────────────── ✨ Update Available ✨ ───────────────────────────╮
+│                                                                              │
+│  A new version of CrewAI is available!                                       │
+│                                                                              │
+│  Current version: 1.15.22                                                    │
+│  Latest version:  1.15.28                                                    │
+│                                                                              │
+│  To update, run: uv sync --upgrade-package crewai                            │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭────────────────────────────── 🌊 Flow Started ───────────────────────────────╮
+│                                                                              │
+│  Flow Started                                                                │
+│  Name: ExpiryTrackerFlow                                                     │
+│  ID: 470b7656-3c32-4620-920c-8762dfca48f6                                    │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭─────────────────────────── 🔄 Flow Method Running ───────────────────────────╮
+│                                                                              │
+│  Method: load_existing_data                                                  │
+│  Status: Running                                                             │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭────────────────────────── ✅ Flow Method Completed ──────────────────────────╮
+│                                                                              │
+│  Method: load_existing_data                                                  │
+│  Status: Completed                                                           │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭─────────────────────────── 🔄 Flow Method Running ───────────────────────────╮
+│                                                                              │
+│  Method: update_df                                                           │
+│  Status: Running                                                             │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+cert_tracker.csv is up to date.
+╭─────────────────────────── 🔄 Flow Method Running ───────────────────────────╮
+│                                                                              │
+│  Method: get_expiry_dates                                                    │
+│  Status: Running                                                             │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭────────────────────────── ✅ Flow Method Completed ──────────────────────────╮
+│                                                                              │
+│  Method: update_df                                                           │
+│  Status: Completed                                                           │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭─────────────────────────── 🔄 Flow Method Running ───────────────────────────╮
+│                                                                              │
+│  Method: filter_by_expiry                                                    │
+│  Status: Running                                                             │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+╭────────────────────────── ✅ Flow Method Completed ──────────────────────────╮
+│                                                                              │
+│  Method: get_expiry_dates                                                    │
+│  Status: Completed                                                           │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+
+╭────────────────────────── ✅ Flow Method Completed ──────────────────────────╮
+│                                                                              │
+│  Method: filter_by_expiry                                                    │
+│  Status: Completed                                                           │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭─────────────────────────── 🔄 Flow Method Running ───────────────────────────╮
+│                                                                              │
+│  Method: ordered_expiry                                                      │
+│  Status: Running                                                             │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+should be skipped
+Dear Miss Fung,
+
+I am writing to let you know the following certificates are due to expire within the next 90 days:
+
+Certificates:
+
+Name: Margot Davis
+Course: Health Canada Division 5 - Drugs For Clinical Trials Involving Human Subjects, Health Canada Division 5 - Investigator
+Expiry Date: 11 Nov 2026
+
+Name: Elizabeth Grieve
+Course: Health Canada Division 5 - Drugs For Clinical Trials Involving Human Subjects
+Expiry Date: 13 Dec 2026
+
+Name: Suzanne Ho
+Course: Health Canada Division 5 - Drugs For Clinical Trials Involving Human Subjects
+(Curriculum Group)
+Health Canada Division 5 - Research Staff - ex: coordinator, assistant, nurse, manager
+(Course Learner Group)
+Expiry Date: 14 Dec 2026
+
+Name: Thomas Roston
+Course: Canada GCP (Curriculum Group) Investigators (Course Learner Group) 2 - Refresher
+Expiry Date: 17 Dec 2026
+
+Kind regards,
+Andrea Fung
+
+╭─────────────────────────── 🔄 Flow Method Running ───────────────────────────╮
+│                                                                              │
+│  Method: email_content                                                       │
+│  Status: Running                                                             │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭────────────────────────── ✅ Flow Method Completed ──────────────────────────╮
+│                                                                              │
+│  Method: ordered_expiry                                                      │
+│  Status: Completed                                                           │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭────────────────────────── ✅ Flow Method Completed ──────────────────────────╮
+│                                                                              │
+│  Method: email_content                                                       │
+│  Status: Completed                                                           │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭─────────────────────────── 🔄 Flow Method Running ───────────────────────────╮
+│                                                                              │
+│  Method: send_email                                                          │
+│  Status: Running                                                             │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭────────────────────────── ✅ Flow Method Completed ──────────────────────────╮
+│                                                                              │
+│  Method: send_email                                                          │
+│  Status: Completed                                                           │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭───────────────────────────── ✅ Flow Completion ─────────────────────────────╮
+│                                                                              │
+│  Flow Execution Completed                                                    │
+│  Name: ExpiryTrackerFlow                                                     │
+│  ID: 470b7656-3c32-4620-920c-8762dfca48f6                                    │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+flow took 0.05 minutes
+╭───────────────────────────── 🌊 Flow Execution ──────────────────────────────╮
+│                                                                              │
+│  Starting Flow Execution                                                     │
+│  Name: ExpiryTrackerFlow                                                     │
+│  ID: 4d3906bc-dd22-46f8-a8a7-027bf2ba2a2c                                    │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭─────────────────────────── ✨ Update Available ✨ ───────────────────────────╮
+│                                                                              │
+│  A new version of CrewAI is available!                                       │
+│                                                                              │
+│  Current version: 1.15.22                                                    │
+│  Latest version:  1.15.28                                                    │
+│                                                                              │
+│  To update, run: uv sync --upgrade-package crewai                            │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭────────────────────────────── 🌊 Flow Started ───────────────────────────────╮
+│                                                                              │
+│  Flow Started                                                                │
+│  Name: ExpiryTrackerFlow                                                     │
+│  ID: 4d3906bc-dd22-46f8-a8a7-027bf2ba2a2c                                    │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭─────────────────────────── 🔄 Flow Method Running ───────────────────────────╮
+│                                                                              │
+│  Method: load_existing_data                                                  │
+│  Status: Running                                                             │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+cert_tracker.csv is up to date.
+╭────────────────────────── ✅ Flow Method Completed ──────────────────────────╮
+│                                                                              │
+│  Method: load_existing_data                                                  │
+│  Status: Completed                                                           │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+╭─────────────────────────── 🔄 Flow Method Running ───────────────────────────╮
+│                                                                              │
+│  Method: update_df                                                           │
+│  Status: Running                                                             │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+
+╭────────────────────────── ✅ Flow Method Completed ──────────────────────────╮
+│                                                                              │
+│  Method: update_df                                                           │
+│  Status: Completed                                                           │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+╭─────────────────────────── 🔄 Flow Method Running ───────────────────────────╮
+│                                                                              │
+│  Method: get_expiry_dates                                                    │
+│  Status: Running                                                             │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+
+╭────────────────────────── ✅ Flow Method Completed ──────────────────────────╮
+│                                                                              │
+│  Method: get_expiry_dates                                                    │
+│  Status: Completed                                                           │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+╭─────────────────────────── 🔄 Flow Method Running ───────────────────────────╮
+│                                                                              │
+│  Method: filter_by_expiry                                                    │
+│  Status: Running                                                             │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+
+╭────────────────────────── ✅ Flow Method Completed ──────────────────────────╮
+│                                                                              │
+│  Method: filter_by_expiry                                                    │
+│  Status: Completed                                                           │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+╭─────────────────────────── 🔄 Flow Method Running ───────────────────────────╮
+│                                                                              │
+│  Method: ordered_expiry                                                      │
+│  Status: Running                                                             │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+
+should be skipped
+╭────────────────────────── ✅ Flow Method Completed ──────────────────────────╮
+│                                                                              │
+│  Method: ordered_expiry                                                      │
+│  Status: Completed                                                           │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+Dear Miss Fung,
+
+I am writing to let you know the following certificates are due to expire within the next 90 days:
+
+Certificates:
+
+Name: Margot Davis
+Course: Health Canada Division 5 - Drugs For Clinical Trials Involving Human Subjects, Health Canada Division 5 - Investigator
+Expiry Date: 11 Nov 2026
+
+Name: Elizabeth Grieve
+Course: Health Canada Division 5 - Drugs For Clinical Trials Involving Human Subjects
+Expiry Date: 13 Dec 2026
+
+Name: Suzanne Ho
+Course: Health Canada Division 5 - Drugs For Clinical Trials Involving Human Subjects
+(Curriculum Group)
+Health Canada Division 5 - Research Staff - ex: coordinator, assistant, nurse, manager
+(Course Learner Group)
+Expiry Date: 14 Dec 2026
+
+Name: Thomas Roston
+Course: Canada GCP (Curriculum Group) Investigators (Course Learner Group) 2 - Refresher
+Expiry Date: 17 Dec 2026
+
+Kind regards,
+Andrea Fung
+
+
+╭─────────────────────────── 🔄 Flow Method Running ───────────────────────────╮
+│                                                                              │
+│  Method: email_content                                                       │
+│  Status: Running                                                             │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭────────────────────────── ✅ Flow Method Completed ──────────────────────────╮
+│                                                                              │
+│  Method: email_content                                                       │
+│  Status: Completed                                                           │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭─────────────────────────── 🔄 Flow Method Running ───────────────────────────╮
+│                                                                              │
+│  Method: email_due                                                           │
+│  Status: Running                                                             │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭────────────────────────── ✅ Flow Method Completed ──────────────────────────╮
+│                                                                              │
+│  Method: email_due                                                           │
+│  Status: Completed                                                           │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭─────────────────────────── 🔄 Flow Method Running ───────────────────────────╮
+│                                                                              │
+│  Method: send_email                                                          │
+│  Status: Running                                                             │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭────────────────────────── ✅ Flow Method Completed ──────────────────────────╮
+│                                                                              │
+│  Method: send_email                                                          │
+│  Status: Completed                                                           │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭───────────────────────────── ✅ Flow Completion ─────────────────────────────╮
+│                                                                              │
+│  Flow Execution Completed                                                    │
+│  Name: ExpiryTrackerFlow                                                     │
+│  ID: 4d3906bc-dd22-46f8-a8a7-027bf2ba2a2c                                    │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+flow took 0.03 minutes
+╭───────────────────────────── 🌊 Flow Execution ──────────────────────────────╮
+│                                                                              │
+│  Starting Flow Execution                                                     │
+│  Name: ExpiryTrackerFlow                                                     │
+│  ID: 0dcce87d-741d-43f7-9035-3ae0831a7864                                    │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭─────────────────────────── ✨ Update Available ✨ ───────────────────────────╮
+│                                                                              │
+│  A new version of CrewAI is available!                                       │
+│                                                                              │
+│  Current version: 1.15.22                                                    │
+│  Latest version:  1.15.28                                                    │
+│                                                                              │
+│  To update, run: uv sync --upgrade-package crewai                            │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭────────────────────────────── 🌊 Flow Started ───────────────────────────────╮
+│                                                                              │
+│  Flow Started                                                                │
+│  Name: ExpiryTrackerFlow                                                     │
+│  ID: 0dcce87d-741d-43f7-9035-3ae0831a7864                                    │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭─────────────────────────── 🔄 Flow Method Running ───────────────────────────╮
+│                                                                              │
+│  Method: load_existing_data                                                  │
+│  Status: Running                                                             │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭────────────────────────── ✅ Flow Method Completed ──────────────────────────╮
+│                                                                              │
+│  Method: load_existing_data                                                  │
+│  Status: Completed                                                           │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+╭─────────────────────────── 🔄 Flow Method Running ───────────────────────────╮
+│                                                                              │
+│  Method: update_df                                                           │
+│  Status: Running                                                             │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+cert_tracker.csv is up to date.
+
+
+╭────────────────────────── ✅ Flow Method Completed ──────────────────────────╮
+│                                                                              │
+│  Method: update_df                                                           │
+│  Status: Completed                                                           │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭─────────────────────────── 🔄 Flow Method Running ───────────────────────────╮
+│                                                                              │
+│  Method: get_expiry_dates                                                    │
+│  Status: Running                                                             │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭────────────────────────── ✅ Flow Method Completed ──────────────────────────╮
+│                                                                              │
+│  Method: get_expiry_dates                                                    │
+│  Status: Completed                                                           │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭─────────────────────────── 🔄 Flow Method Running ───────────────────────────╮
+│                                                                              │
+│  Method: filter_by_expiry                                                    │
+│  Status: Running                                                             │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭────────────────────────── ✅ Flow Method Completed ──────────────────────────╮
+│                                                                              │
+│  Method: filter_by_expiry                                                    │
+│  Status: Completed                                                           │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+╭─────────────────────────── 🔄 Flow Method Running ───────────────────────────╮
+│                                                                              │
+│  Method: ordered_expiry                                                      │
+│  Status: Running                                                             │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+
+╭────────────────────────── ✅ Flow Method Completed ──────────────────────────╮
+│                                                                              │
+│  Method: ordered_expiry                                                      │
+│  Status: Completed                                                           │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+Dear Miss Fung,
+
+I am writing to let you know the following certificates are due to expire within the next 90 days:
+
+Certificates:
+
+Name: Margot Davis
+Course: Health Canada Division 5 - Drugs For Clinical Trials Involving Human Subjects, Health Canada Division 5 - Investigator
+Expiry Date: 11 Nov 2026
+
+Name: Elizabeth Grieve
+Course: Health Canada Division 5 - Drugs For Clinical Trials Involving Human Subjects
+Expiry Date: 13 Dec 2026
+
+Name: Suzanne Ho
+Course: Health Canada Division 5 - Drugs For Clinical Trials Involving Human Subjects
+(Curriculum Group)
+Health Canada Division 5 - Research Staff - ex: coordinator, assistant, nurse, manager
+(Course Learner Group)
+Expiry Date: 14 Dec 2026
+
+Name: Thomas Roston
+Course: Canada GCP (Curriculum Group) Investigators (Course Learner Group) 2 - Refresher
+Expiry Date: 17 Dec 2026
+
+Kind regards,
+Andrea Fung
+
+╭─────────────────────────── 🔄 Flow Method Running ───────────────────────────╮
+│                                                                              │
+│  Method: email_content                                                       │
+│  Status: Running                                                             │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭────────────────────────── ✅ Flow Method Completed ──────────────────────────╮
+│                                                                              │
+│  Method: email_content                                                       │
+│  Status: Completed                                                           │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭─────────────────────────── 🔄 Flow Method Running ───────────────────────────╮
+│                                                                              │
+│  Method: email_due                                                           │
+│  Status: Running                                                             │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭────────────────────────── ✅ Flow Method Completed ──────────────────────────╮
+│                                                                              │
+│  Method: email_due                                                           │
+│  Status: Completed                                                           │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭─────────────────────────── 🔄 Flow Method Running ───────────────────────────╮
+│                                                                              │
+│  Method: send_email                                                          │
+│  Status: Running                                                             │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭────────────────────────── ✅ Flow Method Completed ──────────────────────────╮
+│                                                                              │
+│  Method: send_email                                                          │
+│  Status: Completed                                                           │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭───────────────────────────── ✅ Flow Completion ─────────────────────────────╮
+│                                                                              │
+│  Flow Execution Completed                                                    │
+│  Name: ExpiryTrackerFlow                                                     │
+│  ID: 0dcce87d-741d-43f7-9035-3ae0831a7864                                    │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+flow took 0.04 minutes
+╭───────────────────────────── 🌊 Flow Execution ──────────────────────────────╮
+│                                                                              │
+│  Starting Flow Execution                                                     │
+│  Name: ExpiryTrackerFlow                                                     │
+│  ID: 247f3951-de9f-4fa0-bc72-eb3bae7df55b                                    │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭─────────────────────────── ✨ Update Available ✨ ───────────────────────────╮
+│                                                                              │
+│  A new version of CrewAI is available!                                       │
+│                                                                              │
+│  Current version: 1.15.22                                                    │
+│  Latest version:  1.15.28                                                    │
+│                                                                              │
+│  To update, run: uv sync --upgrade-package crewai                            │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭────────────────────────────── 🌊 Flow Started ───────────────────────────────╮
+│                                                                              │
+│  Flow Started                                                                │
+│  Name: ExpiryTrackerFlow                                                     │
+│  ID: 247f3951-de9f-4fa0-bc72-eb3bae7df55b                                    │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭─────────────────────────── 🔄 Flow Method Running ───────────────────────────╮
+│                                                                              │
+│  Method: load_existing_data                                                  │
+│  Status: Running                                                             │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭────────────────────────── ✅ Flow Method Completed ──────────────────────────╮
+│                                                                              │
+│  Method: load_existing_data                                                  │
+│  Status: Completed                                                           │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+cert_tracker.csv is up to date.
+╭─────────────────────────── 🔄 Flow Method Running ───────────────────────────╮
+│                                                                              │
+│  Method: update_df                                                           │
+│  Status: Running                                                             │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭────────────────────────── ✅ Flow Method Completed ──────────────────────────╮
+│                                                                              │
+│  Method: update_df                                                           │
+│  Status: Completed                                                           │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭─────────────────────────── 🔄 Flow Method Running ───────────────────────────╮
+│                                                                              │
+│  Method: get_expiry_dates                                                    │
+│  Status: Running                                                             │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭────────────────────────── ✅ Flow Method Completed ──────────────────────────╮
+│                                                                              │
+│  Method: get_expiry_dates                                                    │
+│  Status: Completed                                                           │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭─────────────────────────── 🔄 Flow Method Running ───────────────────────────╮
+│                                                                              │
+│  Method: filter_by_expiry                                                    │
+│  Status: Running                                                             │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭────────────────────────── ✅ Flow Method Completed ──────────────────────────╮
+│                                                                              │
+│  Method: filter_by_expiry                                                    │
+│  Status: Completed                                                           │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭─────────────────────────── 🔄 Flow Method Running ───────────────────────────╮
+│                                                                              │
+│  Method: ordered_expiry                                                      │
+│  Status: Running                                                             │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭────────────────────────── ✅ Flow Method Completed ──────────────────────────╮
+│                                                                              │
+│  Method: ordered_expiry                                                      │
+│  Status: Completed                                                           │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭─────────────────────────── 🔄 Flow Method Running ───────────────────────────╮
+│                                                                              │
+│  Method: email_content                                                       │
+│  Status: Running                                                             │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+Dear Miss Fung,
+
+I am writing to let you know the following certificates are due to expire within the next 90 days:
+
+Certificates:
+
+Name: Margot Davis
+Course: Health Canada Division 5 - Drugs For Clinical Trials Involving Human Subjects, Health Canada Division 5 - Investigator
+Expiry Date: 11 Nov 2026
+
+Name: Elizabeth Grieve
+Course: Health Canada Division 5 - Drugs For Clinical Trials Involving Human Subjects
+Expiry Date: 13 Dec 2026
+
+Name: Suzanne Ho
+Course: Health Canada Division 5 - Drugs For Clinical Trials Involving Human Subjects
+(Curriculum Group)
+Health Canada Division 5 - Research Staff - ex: coordinator, assistant, nurse, manager
+(Course Learner Group)
+Expiry Date: 14 Dec 2026
+
+Name: Thomas Roston
+Course: Canada GCP (Curriculum Group) Investigators (Course Learner Group) 2 - Refresher
+Expiry Date: 17 Dec 2026
+
+Kind regards,
+Andrea Fung
+
+╭────────────────────────── ✅ Flow Method Completed ──────────────────────────╮
+│                                                                              │
+│  Method: email_content                                                       │
+│  Status: Completed                                                           │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭─────────────────────────── 🔄 Flow Method Running ───────────────────────────╮
+│                                                                              │
+│  Method: email_due                                                           │
+│  Status: Running                                                             │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭────────────────────────── ✅ Flow Method Completed ──────────────────────────╮
+│                                                                              │
+│  Method: email_due                                                           │
+│  Status: Completed                                                           │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭─────────────────────────── 🔄 Flow Method Running ───────────────────────────╮
+│                                                                              │
+│  Method: send_email                                                          │
+│  Status: Running                                                             │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭────────────────────────── ✅ Flow Method Completed ──────────────────────────╮
+│                                                                              │
+│  Method: send_email                                                          │
+│  Status: Completed                                                           │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭───────────────────────────── ✅ Flow Completion ─────────────────────────────╮
+│                                                                              │
+│  Flow Execution Completed                                                    │
+│  Name: ExpiryTrackerFlow                                                     │
+│  ID: 247f3951-de9f-4fa0-bc72-eb3bae7df55b                                    │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+flow took 0.05 minutes
+╭───────────────────────────── 🌊 Flow Execution ──────────────────────────────╮
+│                                                                              │
+│  Starting Flow Execution                                                     │
+│  Name: ExpiryTrackerFlow                                                     │
+│  ID: efbd4636-e29e-44c7-bd91-db1eb2d0bbed                                    │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭─────────────────────────── ✨ Update Available ✨ ───────────────────────────╮
+│                                                                              │
+│  A new version of CrewAI is available!                                       │
+│                                                                              │
+│  Current version: 1.15.22                                                    │
+│  Latest version:  1.15.28                                                    │
+│                                                                              │
+│  To update, run: uv sync --upgrade-package crewai                            │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭────────────────────────────── 🌊 Flow Started ───────────────────────────────╮
+│                                                                              │
+│  Flow Started                                                                │
+│  Name: ExpiryTrackerFlow                                                     │
+│  ID: efbd4636-e29e-44c7-bd91-db1eb2d0bbed                                    │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭─────────────────────────── 🔄 Flow Method Running ───────────────────────────╮
+│                                                                              │
+│  Method: load_existing_data                                                  │
+│  Status: Running                                                             │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+cert_tracker.csv is up to date.
+╭────────────────────────── ✅ Flow Method Completed ──────────────────────────╮
+│                                                                              │
+│  Method: load_existing_data                                                  │
+│  Status: Completed                                                           │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭─────────────────────────── 🔄 Flow Method Running ───────────────────────────╮
+│                                                                              │
+│  Method: update_df                                                           │
+│  Status: Running                                                             │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭────────────────────────── ✅ Flow Method Completed ──────────────────────────╮
+│                                                                              │
+│  Method: update_df                                                           │
+│  Status: Completed                                                           │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭─────────────────────────── 🔄 Flow Method Running ───────────────────────────╮
+│                                                                              │
+│  Method: get_expiry_dates                                                    │
+│  Status: Running                                                             │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭────────────────────────── ✅ Flow Method Completed ──────────────────────────╮
+│                                                                              │
+│  Method: get_expiry_dates                                                    │
+│  Status: Completed                                                           │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭─────────────────────────── 🔄 Flow Method Running ───────────────────────────╮
+│                                                                              │
+│  Method: filter_by_expiry                                                    │
+│  Status: Running                                                             │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭─────────────────────────── 🔄 Flow Method Running ───────────────────────────╮
+│                                                                              │
+│  Method: ordered_expiry                                                      │
+│  Status: Running                                                             │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+╭────────────────────────── ✅ Flow Method Completed ──────────────────────────╮
+│                                                                              │
+│  Method: filter_by_expiry                                                    │
+│  Status: Completed                                                           │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+
+╭────────────────────────── ✅ Flow Method Completed ──────────────────────────╮
+│                                                                              │
+│  Method: ordered_expiry                                                      │
+│  Status: Completed                                                           │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭─────────────────────────── 🔄 Flow Method Running ───────────────────────────╮
+│                                                                              │
+│  Method: email_content                                                       │
+│  Status: Running                                                             │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭────────────────────────── ✅ Flow Method Completed ──────────────────────────╮
+│                                                                              │
+│  Method: email_content                                                       │
+│  Status: Completed                                                           │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭─────────────────────────── 🔄 Flow Method Running ───────────────────────────╮
+│                                                                              │
+│  Method: email_due                                                           │
+│  Status: Running                                                             │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+Email notification was last sent on: 2026-10-20
+Email notification is not due yet.
+╭────────────────────────── ✅ Flow Method Completed ──────────────────────────╮
+│                                                                              │
+│  Method: email_due                                                           │
+│  Status: Completed                                                           │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭───────────────────────────── ✅ Flow Completion ─────────────────────────────╮
+│                                                                              │
+│  Flow Execution Completed                                                    │
+│  Name: ExpiryTrackerFlow                                                     │
+│  ID: efbd4636-e29e-44c7-bd91-db1eb2d0bbed                                    │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+flow took 0.01 minutes

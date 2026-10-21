@@ -17,7 +17,6 @@ from openpyxl.worksheet.table import Table, TableStyleInfo
 from openpyxl.utils import get_column_letter
 from crewai.flow import Flow, listen, start, and_, router, or_
 from cert_tracker.crews.cert_tracker_crew.extraction_crew import ExtractionCrew
-from cert_tracker.crews.cert_tracker_crew.email_crew import EmailCrew
 from cert_tracker.crews.cert_tracker_crew.models import DataReport
 
 
@@ -31,7 +30,7 @@ warnings.filterwarnings('ignore')
 # class ContentFlow(Flow[ContentState]):
 
 class ExpiryTrackerFlow(Flow):
-    def __init__(self, file_data: dict, test_dirpath: str, email_data:dict, onedrive_folder:str, cert_extraction_csv: str = "", days_ahead=30):
+    def __init__(self, file_data: dict, test_dirpath: str, email_data:dict, onedrive_folder:str, launchctl_log: str, cert_extraction_csv: str = "", days_ahead=30):
         super().__init__()
         self.days_ahead = days_ahead
         self.file_data = file_data #{filename, {'x_certificate', parsed}}
@@ -40,6 +39,7 @@ class ExpiryTrackerFlow(Flow):
         self.email_from = email_data['from']
         self.email_to = email_data['to']
         self.onedrive_folder = onedrive_folder
+        self.launchctl_log = launchctl_log
         
     @start()
     def load_existing_data(self):
@@ -174,7 +174,6 @@ class ExpiryTrackerFlow(Flow):
     def ordered_expiry(self):
         self.state['curr_expired_df'] = self.state['curr_expired_df'].sort_values('expiry_date')
         self.state['curr_expired_df'].to_csv(f"{self.test_dirpath}/cert_expiring.csv", index_label="filename")
-        print("should be skipped")
 
     @listen(or_ ("One expiring case", ordered_expiry))
     def email_content(self):
@@ -200,11 +199,19 @@ class ExpiryTrackerFlow(Flow):
             certificates = cert_info,
             sender = self.email_from['name']
         )
-        
-        print(self.content)
+
+    @router(email_content)
+    def email_due(self):
+        STATE = Path.home() / self.launchctl_log 
+        if is_due(STATE):
+            STATE.write_text(date.today().isoformat())
+            return "Email is due"
+        else:
+            print("Email notification is not due yet.")
+            return "Email not due yet"
 
     #send email
-    @listen(email_content)
+    @listen('Email is due')
     def send_email(self):
         msg = EmailMessage()
         msg["Subject"] = self.subject
@@ -219,8 +226,8 @@ class ExpiryTrackerFlow(Flow):
             server.send_message(msg)
 
 
-def kickoff(file_data, test_dirpath, email_addresses, onedrive_folder, cert_extraction_csv, days_ahead):
-    flow = ExpiryTrackerFlow(file_data=file_data, test_dirpath=test_dirpath, days_ahead=days_ahead, onedrive_folder=onedrive_folder, cert_extraction_csv=cert_extraction_csv, email_data=email_data) 
+def kickoff(file_data, test_dirpath, email_addresses, onedrive_folder, launchctl_log, cert_extraction_csv, days_ahead):
+    flow = ExpiryTrackerFlow(file_data=file_data, test_dirpath=test_dirpath, days_ahead=days_ahead, onedrive_folder=onedrive_folder, launchctl_log=launchctl_log, cert_extraction_csv=cert_extraction_csv, email_data=email_data, ) 
     flow.kickoff()
 
 if __name__ == "__main__":
@@ -239,6 +246,6 @@ if __name__ == "__main__":
     load_dotenv()
 
     start = time.perf_counter()
-    kickoff(file_data, constants_config['test_dirpath'], email_data, constants_config['one_drive_folder'], constants_config['cert_extraction_csv'], constants_config['days_ahead'])
+    kickoff(file_data, constants_config['test_dirpath'], email_data, constants_config['one_drive_folder'], constants_config['launchctl_log'], constants_config['cert_extraction_csv'], constants_config['days_ahead'])
     elapsed = time.perf_counter() - start
     print(f"flow took {elapsed/ 60:.2f} minutes")

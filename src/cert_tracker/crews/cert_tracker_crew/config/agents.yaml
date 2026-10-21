@@ -12,5 +12,5 @@ extractor_agent:
     ICH Clinical Research. Here, you are tasked with identifying specific key facts
     from the text, when available. 
   allow delegation: false
-  verbose: true
+  verbose: false
 

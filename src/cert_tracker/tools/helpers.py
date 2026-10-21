@@ -5,6 +5,13 @@ import numpy as np
 from rapidocr_onnxruntime import RapidOCR
 from datetime import timedelta, datetime, date
 
+def is_due(state):
+    if not state.exists():
+        return True
+    last = date.fromisoformat(state.read_text().strip())
+    print(f"Email notification was last sent on: {last}")
+    return date.today() - last >= timedelta(days=15)
+
 def get_pdf_text(filename):
     with pymupdf.open(filename) as doc: 
         pages = []
